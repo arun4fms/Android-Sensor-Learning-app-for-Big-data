@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sensor Learning App</string>
+    <string-array name="chooseDataType">
+        <item>walking</item>
+        <item>running</item>
+        <item>sitting</item>
+        <item>standing</item>
+        <item>shaking</item>
+    </string-array>
+</resources>

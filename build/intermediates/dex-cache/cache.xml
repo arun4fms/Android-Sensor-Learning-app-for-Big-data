@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\diopo\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_028af05a7fdadd42a7d4e0339462110abc4d253e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project\android\SensorLearningApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="beca5e8714256129fbc725f1d4cd98be03d2584f">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8835f09bed753af74fad1bb2210ab1a29425802b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project\android\SensorLearningApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_b65a7fe93eedafa0bb596e2121cd3f9adc68bd09\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\diopo\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.4.1\55605135bd7b836612e0bba7037c9669f6ccf89f\jackson-annotations-2.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="55605135bd7b836612e0bba7037c9669f6ccf89f">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-annotations-2.4.1_fe0620f32d9eb276b93bdeda62326862f3204e07\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\diopo\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.4.1\f07c773f7b3a03c3801d405cadbdc93f7548e321\jackson-databind-2.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f07c773f7b3a03c3801d405cadbdc93f7548e321">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-databind-2.4.1_818cf7641f68fd03d5eb470fb82681b5d4a1ce3f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project\android\SensorLearningApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_fa2a24bd406dd9b3fd00270154d4141216e0cbc3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project\android\SensorLearningApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_9c22480b82ab535432c0181a1ef3b91b312eb633\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project\android\SensorLearningApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_482d0bce7257e14efe4b223d535245f957810ad1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project\android\SensorLearningApp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_caf8aa47a3c653867d48a70e9369e9681c62a699\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project\android\SensorLearningApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_e9f1ed836d550e9a595f7c6e069ed2356ef3fd49\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project\android\SensorLearningApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2bdb98a1c12864f481f11c002022e13ecc33c04d">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1bf78eaf14a636dc8cac0baba7e19b0fc46f4937\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project\android\SensorLearningApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_93e468dcfb4aa1b1ddb9c07bff8721d233555ae9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project\android\SensorLearningApp\app\build\intermediates\exploded-aar\com.android.volley\volley\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.volley-volley-1.0.0_65023043c48006c98fb11a003bd4c1f4b1b273d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project\android\SensorLearningApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_a496eec2f726cd65899c05f575b02a839b31b438\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\diopo\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.4.1\b130bcfb5a9c410c3cbd2e0adec9437e69a39e2c\jackson-core-2.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b130bcfb5a9c410c3cbd2e0adec9437e69a39e2c">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-core-2.4.1_0a6a979d6af41c6e015deebbd7cb4ab4d067ad51\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project\android\SensorLearningApp\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_14821f7c70a67d84237ac286bbaef309786ecdb0\classes.dex" />
+    </item>
+
+</items>
