@@ -17,8 +17,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
 /**
- * Created by Abdou Khadre DIOP on 22/02/2017.
- *
+ * @author  Abdou Khadre DIOP
+ * @since 22/02/2017
  * This activity get the accelerators values end sent it to a server
  */
 public class Main2Activity extends AppCompatActivity implements SensorEventListener{

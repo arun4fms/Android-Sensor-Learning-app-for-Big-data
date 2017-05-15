@@ -1,8 +1,8 @@
 package app.learning.bigdata.khadre.abdou.diop.sensorlearningapp;
 
 /**
- * Created by Abdou khadre DIOP on 22/02/2017.
- *
+ * @author  Abdou khadre DIOP
+ * @since 22/02/2017
  * This class represent one set of accelerometer values
  */
 

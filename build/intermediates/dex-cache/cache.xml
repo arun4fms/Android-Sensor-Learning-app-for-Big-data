@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="beca5e8714256129fbc725f1d4cd98be03d2584f">
+        sha1="3ff0e148b3ec5a727564731ec9dd5c54f5a57ba1">
         <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8835f09bed753af74fad1bb2210ab1a29425802b\classes.dex" />
     </item>
     <item
@@ -97,7 +97,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="2bdb98a1c12864f481f11c002022e13ecc33c04d">
+        sha1="fc450052244d4c0cc267c3b1dadc47075acfd4f8">
         <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1bf78eaf14a636dc8cac0baba7e19b0fc46f4937\classes.dex" />
     </item>
     <item

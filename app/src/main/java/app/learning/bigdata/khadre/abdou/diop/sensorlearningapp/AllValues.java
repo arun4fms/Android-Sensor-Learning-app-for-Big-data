@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Created by Abdou Khadre DIOP on 22/02/2017.
- *
+ * @author  Abdou Khadre DIOP
+ * @since  22/02/2017
  * This class represent all vallues get from a specific user
  */
 

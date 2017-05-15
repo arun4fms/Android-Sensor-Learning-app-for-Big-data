@@ -11,8 +11,8 @@ import android.widget.Spinner;
 import java.util.regex.Pattern;
 
 /**
- * Created by Abdou Khadre DIOP on 22/02/2017.
- *
+ * @author   Abdou Khadre DIOP
+ * @since 22/02/2017
  * This activity contains the data entry interface
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
