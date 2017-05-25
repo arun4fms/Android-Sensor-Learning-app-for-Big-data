@@ -12,6 +12,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
@@ -135,10 +141,31 @@ public class Main2Activity extends AppCompatActivity implements SensorEventListe
         try {
             json = ow.writeValueAsString(allValues);
             Log.i("json",json);
+            Log.i("url","http://"+adress+":"+port);
+            RequestQueue queue = Volley.newRequestQueue(this);
+
+            // Request a string response from the provided URL.
+            StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://"+adress+":"+port,
+                    new Response.Listener<String>() {
+                        @Override
+                        public void onResponse(String response) {
+                            // Display the first 500 characters of the response string.
+                            Log.i("request response ",response);
+                        }
+                    }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Log.e("http error ",error.getMessage());
+                }
+            });
+            // Add the request to the RequestQueue.
+            queue.add(stringRequest);
         } catch (JsonProcessingException e) {
             Log.e("json ",e.getMessage());
         }
-        Log.i("url","http://"+adress+":"+port);
+
     }
+
+
 
 }
