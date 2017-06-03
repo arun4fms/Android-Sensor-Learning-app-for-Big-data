@@ -6,6 +6,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
@@ -13,14 +14,24 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.NetworkResponse;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
+
+import org.json.JSONException;
+
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 
 /**
  * @author  Abdou Khadre DIOP
@@ -66,7 +77,7 @@ public class Main2Activity extends AppCompatActivity implements SensorEventListe
     private AllValues allValues;
 
     // json string sendable
-    private String json;
+    private String requestBody;
 
     // number of accelerometter values
     private int nbValues;
@@ -138,32 +149,56 @@ public class Main2Activity extends AppCompatActivity implements SensorEventListe
 
         // transform AllValue object into a json string
         ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
-        try {
-            json = ow.writeValueAsString(allValues);
-            Log.i("json",json);
-            Log.i("url","http://"+adress+":"+port);
-            RequestQueue queue = Volley.newRequestQueue(this);
 
-            // Request a string response from the provided URL.
-            StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://"+adress+":"+port,
-                    new Response.Listener<String>() {
-                        @Override
-                        public void onResponse(String response) {
-                            // Display the first 500 characters of the response string.
-                            Log.i("request response ",response);
-                        }
-                    }, new Response.ErrorListener() {
+        try {
+            RequestQueue requestQueue = Volley.newRequestQueue(this);
+            requestBody = ow.writeValueAsString(allValues);
+            StringRequest stringRequest = new StringRequest(Request.Method.POST,  "http://"+adress+":"+port+"/", new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
+                    Toast toast=Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG);
+                    toast.show();
+                    Log.i("VOLLEY", response);
+                }
+            }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Log.e("http error ",error.getMessage());
+                    Log.e("VOLLEY", error.toString());
                 }
-            });
-            // Add the request to the RequestQueue.
-            queue.add(stringRequest);
-        } catch (JsonProcessingException e) {
-            Log.e("json ",e.getMessage());
-        }
+            }) {
+                @Override
+                public String getBodyContentType() {
+                    return "application/json; charset=utf-8";
+                }
 
+                @Override
+                public byte[] getBody() throws AuthFailureError {
+                    try {
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                            Log.i("data",new String(requestBody.getBytes("utf-8"), StandardCharsets.UTF_8));
+                        }
+                        return requestBody == null ? null : requestBody.getBytes("utf-8");
+                    } catch (UnsupportedEncodingException uee) {
+                        VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", requestBody, "utf-8");
+                        return null;
+                    }
+                }
+
+                @Override
+                protected Response<String> parseNetworkResponse(NetworkResponse response) {
+                    String responseString = "";
+                    if (response != null) {
+                        responseString = String.valueOf(response.statusCode);
+                        // can get more details such as response.headers
+                    }
+                    return Response.success(responseString, HttpHeaderParser.parseCacheHeaders(response));
+                }
+            };
+
+            requestQueue.add(stringRequest);
+        } catch (JsonProcessingException e2){
+            e2.printStackTrace();
+        }
     }
 
 

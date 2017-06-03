@@ -12,6 +12,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\diopo\.android\build-cache\641b5d5cebd65a5705dec0347ec82c0bdcdfa052\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="D:\project\android\SensorLearningApp\app\build\intermediates\pre-dexed\debug\classes_6abf690a580eda3397eacc35feafe951b89daf99.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\diopo\AppData\Local\Android\sdk2\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
         jumboMode="false"
         optimize="true"
