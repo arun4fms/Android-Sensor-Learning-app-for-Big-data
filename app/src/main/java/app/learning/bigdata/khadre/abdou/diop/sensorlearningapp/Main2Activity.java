@@ -180,6 +180,7 @@ public class Main2Activity extends AppCompatActivity implements SensorEventListe
                         return requestBody == null ? null : requestBody.getBytes("utf-8");
                     } catch (UnsupportedEncodingException uee) {
                         VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", requestBody, "utf-8");
+
                         return null;
                     }
                 }
